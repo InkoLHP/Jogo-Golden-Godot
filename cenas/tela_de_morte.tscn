@@ -1,0 +1,73 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3bj60mwr8nrr"]
+
+[ext_resource type="FontFile" uid="uid://bovf4665f201o" path="res://Crafter Signature Serif.ttf" id="1_4ggat"]
+[ext_resource type="Script" uid="uid://clbt5ekadjys" path="res://cenas/tela_de_morte.gd" id="1_bjrca"]
+[ext_resource type="AudioStream" uid="uid://drtcvdtdi8gb2" path="res://Musicas/dead-walking-mp3-14594.mp3" id="2_bjrca"]
+
+[node name="TelaDeMorte" type="Node"]
+script = ExtResource("1_bjrca")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -10.0
+offset_top = -15.0
+offset_right = 1169.0
+offset_bottom = 681.0
+color = Color(0.344076, 0.344076, 0.344076, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -111.0
+offset_right = 228.0
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 0.0405029, 0.0223527, 1)
+theme_override_fonts/font = ExtResource("1_4ggat")
+theme_override_font_sizes/font_size = 50
+text = "Você foi derrotado!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.5
+offset_top = 26.0
+offset_right = 105.5
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_4ggat")
+theme_override_font_sizes/font_size = 25
+text = "Tente novamente"
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -16.5
+offset_right = 72.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_4ggat")
+theme_override_font_sizes/font_size = 25
+text = "Tela inicial"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_bjrca")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

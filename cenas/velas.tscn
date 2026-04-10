@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt3f1vr7a3lmo"]
+
+[sub_resource type="Gradient" id="Gradient_uo4h1"]
+offsets = PackedFloat32Array(0, 0.58)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_iy065"]
+gradient = SubResource("Gradient_uo4h1")
+fill = 1
+fill_from = Vector2(0.530488, 0.506098)
+
+[node name="Velas" type="PointLight2D"]
+modulate = Color(1, 0.160784, 1, 1)
+position = Vector2(0, -1)
+color = Color(0.970864, 0.569019, 0.758691, 1)
+texture = SubResource("GradientTexture2D_iy065")

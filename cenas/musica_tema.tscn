@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://gy2xpuvxu6da"]
+
+[ext_resource type="Script" uid="uid://b3cepjuv8f68a" path="res://cenas/musica_tema.gd" id="1_fqubb"]
+
+[node name="MusicaTema" type="AudioStreamPlayer2D"]
+volume_db = -20.543
+script = ExtResource("1_fqubb")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btx4wer5xk0i5"
+path="res://.godot/imported/Assassin's Creed 2 OST _ Jesper Kyd - Ezio's Family (Track 03).mp3-bcb501ddaa0f2a47a12c26612bd14ef8.mp3str"
+
+[deps]
+
+source_file="res://Musicas/Assassin's Creed 2 OST _ Jesper Kyd - Ezio's Family (Track 03).mp3"
+dest_files=["res://.godot/imported/Assassin's Creed 2 OST _ Jesper Kyd - Ezio's Family (Track 03).mp3-bcb501ddaa0f2a47a12c26612bd14ef8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

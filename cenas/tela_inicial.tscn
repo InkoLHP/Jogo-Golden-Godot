@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlpq8mqo1i4we"]
+
+[ext_resource type="Texture2D" uid="uid://crv5tk8jvfdb6" path="res://Fundo_Golden.jpg" id="1_24di4"]
+[ext_resource type="Script" uid="uid://dwaufymgmqiai" path="res://cenas/tela_inicial.gd" id="1_b8b2x"]
+[ext_resource type="FontFile" uid="uid://bovf4665f201o" path="res://Crafter Signature Serif.ttf" id="2_ox3ib"]
+[ext_resource type="AudioStream" uid="uid://dqn51k5lr4swp" path="res://Musicas/HUNTR_X (Huntrix) - Golden (Medieval Cover _ Bardcore).mp3" id="3_ox3ib"]
+
+[node name="TelaInicial" type="Node"]
+script = ExtResource("1_b8b2x")
+
+[node name="FundoGolden" type="Sprite2D" parent="."]
+position = Vector2(573, 325)
+scale = Vector2(1.61361, 1.62621)
+texture = ExtResource("1_24di4")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 90.0
+offset_top = 82.0
+offset_right = 505.0
+offset_bottom = 208.0
+theme_override_colors/font_color = Color(0.894845, 0.760655, 0.412249, 1)
+theme_override_fonts/font = ExtResource("2_ox3ib")
+theme_override_font_sizes/font_size = 130
+text = "Golden"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 95.0
+offset_top = 267.0
+offset_right = 280.0
+offset_bottom = 324.0
+theme_override_fonts/font = ExtResource("2_ox3ib")
+theme_override_font_sizes/font_size = 50
+text = "Inicio"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 96.0
+offset_top = 350.0
+offset_right = 281.0
+offset_bottom = 407.0
+theme_override_fonts/font = ExtResource("2_ox3ib")
+theme_override_font_sizes/font_size = 50
+text = "Sair
+"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ox3ib")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
